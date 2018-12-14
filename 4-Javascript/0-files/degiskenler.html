@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Degiskenler</title>
+</head>
+<body>
+   
+   
+   <p id="paragraf"></p>
+   <p>Konsol Ekranı</p>
+   
+   <script type="text/javascript">
+    
+    /* var ad = "tayfun";
+    console.log(ad);
+       var yas = 23;
+    console.log(yas);
+       
+       var kisi1=["tayfun", "odabaşı", 23, "OGU"];
+       console.log(kisi1);
+    
+       console.log(kisi1[1] + " " + kisi1[2]);
+       
+       kisi1[kisi1.length] = "Web Developer";
+       
+       console.log(kisi1);
+       
+       var kisiler={
+           ad: "tayfun",
+           soyad: "odabaşı",
+           yas: 22,
+           okul: "OGU",
+       };
+       
+         console.log(kisiler);
+       
+       console.log(kisiler.ad);
+       
+       var kisilerdizi= [
+           {ad:"tayfun", soyad:"odabaşı", yas: 22, okul:"OGU"},
+       {ad:"ahmet", soyad:"yılmaz", yas: 35,
+           okul: "OGU"},
+       ]
+       
+       console.log(kisilerdizi); */
+    
+    
+    function kisi(ad, soyad, yas, okul){
+        this.Ad=ad;
+        this.Soyad=soyad;
+        this.Yas=yas;
+        this.Okul=okul;
+    }
+       
+       var kisi1 = new kisi("tayfun", "odabaşı", 22, "ogu");
+       console.log(kisi1);
+       
+       var kisileryenidizi = [
+           new kisi("tayfun","odabaşı",22,"ogu"),
+           new kisi("tayfun", "odabasi", 22, "ogu")
+       ];
+       
+       console.log(kisileryenidizi);
+       
+       console.log(kisileryenidizi[0].Ad + " " + kisileryenidizi[1].Soyad);
+       
+       document.getElementById('paragraf').innerHTML=kisileryenidizi[0].Ad + " " + kisileryenidizi[1].Soyad ;
+
+    
+    
+    
+    
+    </script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+</body>
+</html>

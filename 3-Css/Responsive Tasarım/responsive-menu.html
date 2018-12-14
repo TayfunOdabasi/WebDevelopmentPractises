@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width">
+
+
+    <style type="text/css">
+    
+        img{
+            
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+        }
+        
+        body{
+            padding:0px;
+            margin:0px;
+        }
+        
+        #navbar{
+            margin: 0px;
+            
+            
+        }
+        
+        #navbar ul{
+            list-style: none;
+            display:block;
+            padding:0;
+
+            
+        }
+        
+        #navbar ul li{
+            float: left;
+            margin-right: 30px;
+            padding: 5px 0px;
+            width: 17%;
+        }
+        
+        #navbar ul li a{
+            text-decoration: none;
+            font-size: 30px;
+            color:brown;
+            padding: 20px;
+        }
+        
+        @media screen and (max-width: 600px)
+        {
+        
+        #icon
+        {
+            display:block;
+            height:45px;
+            width: 100%;
+            background: url(menuicon.png) no-repeat 98% center;
+            background-color: antiquewhite;
+            cursor:pointer;
+            margin:0px;
+            padding-bottom: 10px;
+        }
+            
+            #navbar ul
+            {
+                
+                overflow: hidden;
+                height:0;
+                background: #EEE1D0;
+            }
+            
+            #navbar ul.Open{
+                height:auto;
+            }
+            
+            #navbar ul li
+            {
+                float: none;
+                border-bottom: 1px solid #f1f1f1;
+            }
+            
+        }
+        
+    
+    
+    
+    </style>
+
+
+
+
+</head>
+<body>
+   
+   <a id="icon"></a>
+   
+   <div id="navbar">
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Home</a></li> 
+           
+       </ul>
+       
+      
+       
+   </div>
+   
+    <img src="ornek2.jpg">
+    
+    
+    
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+   
+   <script>
+    $(document).ready(function(){
+        $("#icon").click(function(){
+            $("#navbar ul").toggleClass("Open")
+        })
+    })
+    
+    </script>
+</body>
+</html>

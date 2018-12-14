@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+  
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum perferendis quod aut eveniet debitis deserunt mollitia doloribus maxime neque facere!</p>
+    
+    <button id="show">Göster</button>
+    <button id="hide">Gizle</button>
+    <button id="toggle">toggle</button>
+    
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        
+    $("#show").click(function (){
+        
+        $("p").show(2000, function(){
+            alert("paragraf gösterildi")
+        });
+    })
+        
+    $("#hide").click(function (){
+        
+        $("p").hide();
+    })
+        
+    $("#toggle").click(function (){
+        
+        $("p").toggle("slow");
+    })
+        
+        
+        
+    });
+        
+    </script>
+  
+    
+</body>
+</html>

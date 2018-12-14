@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.js"
+          integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+          crossorigin="anonymous">
+        </script>
+    <title>Document</title>
+    
+    
+    <style type="text/css">
+    
+        .highlight{
+            background: #f1f1f1;
+            
+        }
+        
+        .gorukmezlik{
+            display: none;
+        }
+    
+    </style>
+</head>
+<body>
+   
+   
+   <h1>Methods</h1>
+   <ul>
+       <li id="firstlistitem">
+       Gereksiz liste elemanı, google'a gidememek için tıklayın: 
+       <a href="#">Google'a gitmiyor.</a>
+       </li>
+       <li> Blabla</li>
+       <li class="highlight">blabla bla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptates, quaerat inventore dignissimos fugit accusantium voluptate error consequatur rem labore!</li>
+   </ul>
+    
+    <input id="ad" type="text" placeholder="adınızı giriniz">
+    <input id="soyad" type="text" placeholder="soyadınızı giriniz">
+    <br/>
+    <button onclick="ButonaTikla();">Neşeyle tıklayın</button>
+    
+    
+    <script type="text/javascript">
+        console.log($("ul").text());
+        console.log($("ul li").text());
+        
+        // $("#firstlistitem").text("Google'a gidebilir de gitmeyebilir de");
+        
+        
+        console.log($("input").val());
+        
+        $("#firstlistitem a").attr("href", "http://google.com.tr");
+       
+        
+        function ButonaTikla(){
+            var Ad = $("#ad").val();
+            var Soyad = $("#soyad").val();
+            console.log( Ad + " " + Soyad);
+            
+            $("#ad").addClass("highlight");
+            
+            $("#soyad").toggleClass("highlight");
+            $("#soyad").toggleClass("gorukmezlik");
+        }
+        
+        
+        
+         
+        
+        
+        
+        
+
+    </script>
+</body>
+</html>

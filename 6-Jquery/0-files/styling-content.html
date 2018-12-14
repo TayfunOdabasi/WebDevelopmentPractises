@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+</head>
+<body>
+   
+   <h1>Styling Çalışması</h1>
+    <a href="#"> Link </a>
+    <ul id="first">
+        <li class="firstli" >Birinci<a href="">Deneme a</a></li>
+        <li>İkinci</li>
+        <li class="deneme">Üçüncü</li>
+    </ul>
+
+    <script type="text/javascript">
+    
+   
+    document.getElementById("first").style.color="yellow";   
+    $("ul").css("color", "red");
+
+    var styles = {
+        color: "red",
+        border: "1px solid aqua"
+    }
+    
+    $("#first").css(styles);
+        
+    $("#first li a").css({
+        color: "green",
+        fontSize: "20px",
+    })
+        
+    $("ul .firstli").css("display", "none");
+
+    </script>
+    
+</body>
+</html>

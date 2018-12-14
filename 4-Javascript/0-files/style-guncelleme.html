@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <meta charset="UTF-8">
+    <title>Style Guncelleme</title>
+    
+</head>
+
+
+<body>
+   
+   <p id="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus nemo repellendus tempora veritatis laborum aut at voluptate labore dolor.</p>
+   <button id="buttonparagraf">Değiştir</button>
+   
+   <hr/>
+   
+   
+   <p id="paragraf2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus nemo repellendus tempora veritatis laborum aut at voluptate labore dolor.</p>
+   <button id="buttonparagraf2">Sil</button>
+    <button id="buttonparagraf3">Getir</button>
+    
+  
+  
+   
+   
+   
+   <script type="text/javascript">
+       
+        var changed = false;
+       var changed2 = false;
+       
+       document.getElementById('buttonparagraf').onclick=function(){
+       
+           
+        if(changed==false){
+       document.getElementById('paragraf').innerHTML="Toggle!";
+            document.getElementById('paragraf').style.color="blue";
+            changed=true;
+        }
+           else{
+               document.getElementById('paragraf').innerHTML="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus nemo repellendus tempora veritatis laborum aut at voluptate labore dolor.";   
+               changed=false;
+           }
+           
+       }
+       
+        document.getElementById('buttonparagraf2').onclick=function(){
+            
+            document.getElementById('paragraf2').style.display="none";
+            document.getElementById('paragraf2').style.fontSize="20px";
+            
+            
+        }
+        
+        document.getElementById('buttonparagraf3').onclick=function(){
+            
+            document.getElementById('paragraf2').style.display="inline-block";
+            document.getElementById('paragraf2').style.marginRight="500px";
+            
+            
+        }
+       
+       
+       
+       
+       
+       
+     
+       
+       
+       
+       
+    </script>
+    
+</body>
+</html>

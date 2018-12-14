@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+  
+</head>
+<body>
+ 
+ <form>
+  <p>
+      Adınız: <input class="control" type="text" placeholder="Adınızı girin"> 
+  </p>
+  
+  <p>
+      Hobileriniz: <select class="control">
+      <option value="lagaluga">Deneme1</option>
+         <option value="lagaluga">Deneme2</option>
+          
+      </select>
+      
+  </p>
+  
+  <script type="text/javascript">
+     
+      $(document).ready(function(){
+         $(".control").change(function(){
+             console.log( $(this).val());
+             
+            
+             
+         })
+          
+          
+      });
+     
+     
+     
+     </script>
+   
+</form>
+  
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous">
+    </script>
+    
+    <style type="text/css">
+    
+        .box{
+            margin-top: 30px;
+            position: absolute;
+            left: 50;
+            width: 250px;
+            height: 250px;
+            background: blue;        
+        }
+        
+    </style>
+  
+</head>
+<body>
+    
+    <button id="animate"> Animate! </button>
+    <hr>
+    
+    <div class="box">
+    Merhaba
+    </div>
+    
+    
+    <script type="text/javascript">
+        
+        
+        var box = $(".box");
+    
+        $(document).ready(function(){
+            
+            $("#animate").click(function(){
+                
+                box.animate(
+                    {left: "300px", width: "900px"}, 
+                    3000, 
+                    function(){ alert("Animasyon tamamlandı") }
+                );
+                
+                 box.text("Yazı değişti ve büyüyor"), 
+                
+                /*Problemli box animate*/
+                 box.animate(
+                   
+                    {fontSize: "40px"},
+                    3000,
+                    function(){}
+                );
+                
+            });
+            
+        });
+    
+        
+    </script>
+  
+</body>
+</html>

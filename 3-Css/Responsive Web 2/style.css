@@ -1,0 +1,179 @@
+body{
+    margin:0;
+    background-color:#333333;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+
+
+h1,h2,h3
+{
+    margin: 0;
+    padding: 1em 0;
+}
+
+p
+{
+    padding: 1em 0;
+    margin 0;
+}
+
+
+#btnRead{
+    display:inline-block;
+    margin:.5em 0;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;    
+}
+
+#btnRead{
+    background: #eaeaea;
+    color: #333;
+}
+
+
+
+
+/*header*/
+
+
+#header
+{
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+#header .bg-image
+{
+    position:absolute;
+    background:#333 url('https://static.pexels.com/photos/48606/pexels-photo-48606.jpeg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#header h1
+{
+    padding: 110px;
+    padding-bottom: 0;
+}
+
+#header p{
+    padding: 0 1.5em;
+}
+
+
+/*section-z*/
+
+
+#section-z{
+    background-color: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+
+
+/*Section B*/
+
+.section-a{
+    padding: 2em 1em 1em;
+}
+
+.section-a ul
+{
+list-style: none;
+margin:0;
+padding:0;
+}
+
+.section-a li
+{
+    margin-bottom: 1em;
+    background-color: #fff;
+    color: #333;
+}
+
+.text-content{
+    padding:.15em;
+}
+
+
+
+/*Section B*/
+
+.section-b{
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+
+
+
+
+/*section c*/
+.section-c{
+    padding: 2em;
+    background: #2690d4;
+    
+}
+
+
+#footer{
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #2690d4;
+
+}
+
+@media screen and (min-width: 700px)
+{
+    
+    ul li{
+        width: 25%;
+        display: inline-block;
+        margin: 8px;
+    }
+    
+    #box1{
+        display: inline-block;
+        width: 47.9%;
+    }
+    #box2{
+                display: inline-block;
+
+        width: 46.7%;
+    }
+}
+
+
+
+
+
+
+

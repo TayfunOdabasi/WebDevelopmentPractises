@@ -1,0 +1,38 @@
+*
+{
+    border: 1px solid #eee;
+}
+
+a
+{
+    color: red;
+
+}
+
+a[href="http://www.google.com"]
+{
+    color: yellow;
+}
+
+#header{
+    
+    text-decoration: line-through;
+    background-color:aqua;
+}
+
+ol li a{
+    background-color: bisque;
+}
+
+ul li:nth-child(odd){
+    text-align: right;
+}
+
+input[type="text"]{
+    background-color: blueviolet;
+}
+
+input[type="checkbox"]{
+    width: 100px;
+    height: 100px;
+}

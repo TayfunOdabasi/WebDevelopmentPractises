@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Image Gallery Uygulaması</title>
+    <style type="text/css">
+        
+   
+        *
+        {
+            box-sizing: border-box;
+        }
+        
+        .responsive{
+            width: 25%;
+            
+            padding: 0px 10px;
+            float:left;
+        }
+        
+        
+        .image-gallery{
+            width: 100%;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        
+        .image-gallery:hover
+        {
+            
+            border: 1px solid black;
+        
+        }
+        
+        .image-gallery img{
+            width: 100%;
+            height: auto;
+            
+        }
+        
+        .info{
+            text-align: center;
+            padding: 15px;
+        }
+        
+        @media screen and (max-width:700px){
+            .responsive{
+            width: 50%;
+                margin-top: 10px;
+            }
+            
+        }
+        
+        @media screen and (max-width:400px){
+            .responsive{
+            width: 100%;
+                margin-top: 5px;
+            }
+            
+        }
+        
+      
+        
+        
+
+    
+    </style>
+</head>
+<body>
+   
+   <div id="container">
+      
+      <div class="responsive">
+       
+       <div class="image-gallery">
+            <a href="#"> <img src="ornek.jpg"> </a>
+           <div class="info">
+           Bu gorselle ilgili bilgi
+           </div>
+    
+       </div>
+       
+       </div>
+       
+       <div class="responsive">
+       
+       <div class="image-gallery">
+            <a href="#"> <img src="ornek.jpg"> </a>
+           <div class="info">
+           Bu gorselle ilgili bilgi
+           </div>
+    
+       </div>
+       
+       </div>
+       
+       <div class="responsive">
+       
+       <div class="image-gallery">
+            <a href="#"> <img src="ornek.jpg"> </a>
+           <div class="info">
+           Bu gorselle ilgili bilgi
+           </div>
+    
+       </div>
+       
+       </div>
+       
+       <div class="responsive">
+       
+       <div class="image-gallery">
+            <a href="#"> <img src="ornek.jpg"> </a>
+           <div class="info">
+           Bu gorselle ilgili bilgi
+           </div>
+    
+       </div>
+       
+       </div>
+       
+       
+    
+   </div>
+       
+       
+       
+    
+   </div>
+    
+</body>
+</html>

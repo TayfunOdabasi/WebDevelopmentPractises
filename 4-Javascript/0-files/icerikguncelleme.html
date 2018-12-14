@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    
+    <meta charset="UTF-8">
+    <title>İcerik Guncelleme</title>
+    
+</head>
+
+
+<body>
+   
+   <p id="paragraf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus nemo repellendus tempora veritatis laborum aut at voluptate labore dolor.</p>
+   <button id="buttonparagraf">Değiştir</button>
+   
+   <hr/>
+   
+   <img id="resim" src="img/ornek1.jpg" width="250px">
+   <br/>
+   <button id="buttonimage">Resmi Değiştir</button>
+   
+  
+   
+   
+   
+   <script type="text/javascript">
+       
+        var changed = false;
+       var changed2 = false;
+       
+       document.getElementById('buttonparagraf').onclick=function(){
+       
+           
+        if(changed==false){
+       document.getElementById('paragraf').innerHTML="Toggle Toggle Toggle";    
+            changed=true;
+        }
+           else{
+               document.getElementById('paragraf').innerHTML="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ducimus nemo repellendus tempora veritatis laborum aut at voluptate labore dolor.";   
+               changed=false;
+           }
+           
+       }
+       
+       
+       
+       document.getElementById('buttonimage').onclick= function(){
+           if(changed2 == false)
+               {
+           document.getElementById('resim').src="img/ornek2.jpg";
+                   changed2=true;
+               }
+           else{
+                document.getElementById('resim').src="img/ornek1.jpg";
+               changed2=false;
+           }
+       }
+       
+       
+       
+       
+    </script>
+    
+</body>
+</html>
